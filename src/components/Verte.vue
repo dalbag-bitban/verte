@@ -164,7 +164,10 @@ export default {
     menuPosition: {
       type: String,
       default: 'bottom',
-      validator: makeListValidator('menuPosition', ['top', 'bottom', 'left', 'right', 'center'])
+      validator: makeListValidator(
+          'menuPosition',
+          ['top', 'bottom', 'left', 'right', 'center', 'top-left', 'top-right', 'bottom-left', 'bottom-right' ]
+      )
     },
     showHistory: {
       type: Boolean,
@@ -451,6 +454,18 @@ $dot-space: 4px;
     right: 0
   &--left
     left: 0
+  &--top-left
+    bottom: 50px
+    left: 0
+  &--top-right
+    bottom: 50px
+    right: 0
+  &--bottom-left
+    top: 50px
+    left: 0
+  &--bottom-right
+    top: 50px
+    right: 0
   &--center
     position: fixed
     top: 0
