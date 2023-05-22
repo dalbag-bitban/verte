@@ -459,10 +459,10 @@ $dot-space: 4px;
     left: 0
   &--top-right
     bottom: 50px
-    right: 0
+    left: 0
   &--bottom-left
     top: 50px
-    left: 0
+    right: 0
   &--bottom-right
     top: 50px
     right: 0
